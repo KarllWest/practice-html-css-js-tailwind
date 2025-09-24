@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Server</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Неон-ефект тексту */
+    .neon-text {
+      text-shadow: 0 0 10px #00f6ff, 0 0 20px #00f6ff, 0 0 40px #00f6ff;
+    }
+    /* Анімований фон (градієнт) */
+    body {
+      background: linear-gradient(-45deg, #0f0f0f, #1a0033, #001133, #002244);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center h-screen text-white">
+  
+  <section class="text-center">
+    <!-- Лого -->
+    <div class="mb-6">
+      <img src="https://cdn-icons-png.flaticon.com/512/906/906361.png" alt="Server Logo" class="w-24 mx-auto drop-shadow-[0_0_20px_#00f6ff]">
+    </div>
+
+    <!-- Назва -->
+    <h1 class="text-5xl font-extrabold neon-text mb-4">
+      Welcome to Cat Mansion
+    </h1>
+
+    <!-- Слоган -->
+    <p class="text-xl text-gray-300 mb-8">
+      🎮 Gaming • 💬 Community • 🎤 Voice Parties
+    </p>
+
+    <!-- Кнопка -->
+    <a href="https://discord.gg/your-invite" 
+       class="px-8 py-4 bg-[#00f6ff] text-black font-bold rounded-full shadow-lg shadow-cyan-500/50 
+              hover:scale-110 hover:shadow-cyan-400/80 transition transform duration-300">
+      Join our Discord
+    </a>
+
+    <!-- Live статус -->
+    <div class="mt-8 text-gray-400 text-sm">
+      🔥 1520 members • 320 online right now
+    </div>
+  </section>
+
+</body>
+</html>
